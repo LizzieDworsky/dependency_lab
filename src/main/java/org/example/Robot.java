@@ -9,9 +9,9 @@ public class Robot {
 
 
 //    Constructor
-    public Robot(String weaponName, int weaponPower) {
+    public Robot(Weapon weapon) {
         this.name = "Iron Giant";
-        this.weapon = new Weapon(weaponName, weaponPower);
+        this.weapon = weapon;
     }
 
 //    Methods (CAN DO)
