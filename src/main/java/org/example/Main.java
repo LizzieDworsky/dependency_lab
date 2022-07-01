@@ -7,9 +7,9 @@ public class Main {
         LaserVision laserVision = new LaserVision();
         ArmCannon armCannon = new ArmCannon();
         EnergyClaw energyClaw = new EnergyClaw();
-        Robot robotOne = new Robot(energyClaw);
-        System.out.println(robotOne.name);
+        Attacker robotOne = new Robot(armCannon, "Iron Giant");
+        Attacker wolfOne = new Werewolf("Lupin", 40);
         robotOne.Attack();
-
+        wolfOne.Attack();
     }
 }

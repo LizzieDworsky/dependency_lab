@@ -1,6 +1,6 @@
 package org.example;
 
-public class Robot {
+public class Robot implements Attacker {
 
 //    Instance variables (HAS A)
     public String name;
@@ -9,8 +9,8 @@ public class Robot {
 
 
 //    Constructor
-    public Robot(Weapon weapon) {
-        this.name = "Iron Giant";
+    public Robot(Weapon weapon, String name) {
+        this.name = name;
         this.weapon = weapon;
     }
 
